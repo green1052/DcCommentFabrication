@@ -36,7 +36,7 @@ def get_app_id(token):
         "app_id"]
 
 
-def write(gall_id, article_no, nick_name, password, memo):
+def write(gall_id, article_no, nickname, password, memo):
     body = {
         "id": gall_id,
         "no": article_no,
@@ -44,7 +44,7 @@ def write(gall_id, article_no, nick_name, password, memo):
         "mode": "com_write",
         "client_token": token,
         "comment_memo": memo,
-        "comment_nick": nick_name,
+        "comment_nick": nickname,
         "comment_pw": password
     }
 
